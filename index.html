@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<title>Tomasz Franckiewicz</title>
+	<meta name="robots" content="all" />
+	<meta name="keywords" content="project, management, todo, things, done, tomasz, franckiewicz, everyday" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta property="og:image" content="http://tomasz.fr/fb.jpg" />
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+		* { padding: 0; margin: 0; }
+		body { background-color: #333; }
+		h1 { color: #fff; font-family: Helvetica; font-size: 38px; line-height: 32px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+		p { color: #fff; font-family: Helvetica; font-size: 21px; line-height: 26px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid yellow; opacity: 1.0 !important; }
+		a:hover { color: yellow; border-bottom: 1px solid yellow; }
+		div.bottom { text-align: center }
+		img.right { margin-left: 20px; }
+		a.link { border-bottom: none !important; }
+		#about {
+			width: 420px;
+			padding: 140px;
+			margin: auto !important;
+			margin-top: 20px !important;
+			margin-bottom: 20px !important;
+			background-color: black;
+			opacity: 0.7; /* css standard */
+			filter: alpha(opacity=70); /* internet explorer */
+			border-radius: 50%;
+			transition: opacity .7s ease-out;
+			-moz-transition: opacity .7s ease-out;
+			-webkit-transition: opacity .7s ease-out;
+			-o-transition: opacity .7s ease-out;
+		}
+		#about:hover {
+			opacity: 0.3;
+			filter: alpha(opacity=30);
+			transition: opacity .7s ease-out;
+			-moz-transition: opacity .7s ease-out;
+			-webkit-transition: opacity .7s ease-out;
+			-o-transition: opacity .7s ease-out;
+		}
+		.social {
+			position: relative;
+			overflow: hidden;
+			left: 0px;
+			top: 0px;
+			width: 25px;
+			height: 25px;
+			border: 0px;
+		}
+		@media (max-width: 767px) {
+			#about { position: relative; width: auto; padding: 20px; margin-top: 50px !important; margin-bottom: 50px !important; border-radius: 0px !important; }
+			background-image { opacity: 0.2; }
+		}
+	</style>
+</head>	
+<body>
+<!-- le information about myself -->
+<div id="about">
+	<h1>Hello,<br /> I’m Tom Franckiewicz</h1>
+	<p>My primary skill is solid knowledge of project managment and end-to-end web development using CSS and HTML. I am a nice guy... until I'm not :)</p>
+	<p>Lately I've worked with <a href="http://www.infovidematrix.pl" target="_blank">Infovide-Matrix</a>. Now I'm working on beautiful app <a href="http://www.evrdy.com" target="_blank">EveryDay</a> with <a href="http://www.itbe.pl" target="_blank">ITBE</a>.
+	<p>I love motorcycles and I occasionally like to bake a cake.</p>
+	<div class="bottom"><a class="link" href="http://www.facebook.com/tfranckiewicz" target="_blank"><img class="social" src="fb.png" alt="Facebook"></a><a class="link" href="http://www.linkedin.com/in/tfranckiewicz" target="_blank"><img class="social" style="margin-left: 20px !important;" src="in.png" alt="LinkedIn"></a></div>
+</div>
+<!-- le jquery & backstretch -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("tf_bg.jpg", {speed: 150});
+         }
+      })
+      .resize(); //trigger resize on page load
+});
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-48359345-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>
